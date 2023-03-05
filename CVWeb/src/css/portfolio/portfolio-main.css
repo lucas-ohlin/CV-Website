@@ -1,0 +1,158 @@
+.main-container {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+}
+
+.content-1 {
+    background-color: var(--main-blend-bg);
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-2 {
+    background-color: var(--main-blend2-bg);
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-left {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-right {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    background-color:   wheat ;
+}
+
+.box {
+    display: block;
+}
+.box-top {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-dark-bg);
+    justify-content: space-between;
+}
+.box-top h1 {
+    padding-left: 15px;
+    font-size: 21px;
+}
+
+.popup-button {
+    background-color: var(--main-light-bg);
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    transition: 0.3s;
+}
+.popup-button:hover, .popup-button:active {
+    background-color: var(--main-blend-bg);
+}
+
+
+.portfolio-image {
+    width: 400px;
+    height: 400px;
+    transition: 0.3s;
+    border: 3px solid var(--main-light-bg);
+}
+
+.small-icon {
+    background-color: var(--main-light-bg);
+    width: 30px;
+    height: 30px;
+}
+
+/*The pupup windows css*/ 
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+} 
+
+.popup {
+    position: relative;
+    height: 50%;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: var(--main-dark-bg);
+}
+.popup-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup-close:hover, .popup-close:active {
+    color: var(--main-light-bg-bg);
+}       
+.popup-content {
+    padding-top: 40px;
+    max-height: 30%;
+    overflow: auto;
+}
+  
+
+@media (max-width: 1000px) {
+    .content-1 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-2 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-left {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    
+    .content-right {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }    
+}

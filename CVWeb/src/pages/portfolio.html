@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Charset and title of the website-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>lucas-persson-ohlin</title>
+
+        <!--Shared CSS style sheets-->
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+
+        <!--CSS for this page-->
+        <link rel="stylesheet" href="../css/portfolio/portfolio-main.css" />
+        
+        <!--Fontawesome (icons)-->
+        <script src="https://kit.fontawesome.com/abc9051b08.js" crossorigin="anonymous"></script>
+
+        <!--Scripts that's supposed to load before the rest of the document-->
+        <script defer src="../js/scripts.js"></script> 
+    </head>
+    <body>
+        
+        <div class="grid-container">
+
+            <!--The navigation bar ontop of the page-->
+            <nav id="nav-id">
+                <div class="nav-container">
+                    <a class="menu-title"href="/src/pages/index.html"><h1>Lucas Persson Öhlin</h1></a>
+                    
+                    <div class="page-menu">
+                        <a id="home-button" href="/src/pages/index.html">Home</a>
+                        <a href="/src/pages/cv.html">CV</a>
+                        <a href="/src/pages/portfolio.html" class="active">Portfolio</a>
+                        <a href="/src/pages/aboutme.html">About me</a>
+                        <a href="/src/pages/contact.html">Contact</a>
+                    </div>
+
+                    <!--The mobile responsive menu-->
+                    <div class="mobile-menu">
+                        <a href="/src/pages/index.html">Home</a>
+                        <a href="/src/pages/cv.html">CV</a>
+                        <a href="/src/pages/portfolio.html" class="active">Portfolio</a>
+                        <a href="/src/pages/aboutme.html">About me</a>
+                        <a href="/src/pages/contact.html">Contact</a>
+                    </div>
+                    <!--The hamburger menu-->
+                    <button class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+            </nav>
+            
+            <!--The main content of the page-->
+            <div class="main-container">
+
+                <div class="content-container">
+                    
+                    <div class="content-1">
+                            
+                        <div class="box">
+                            <div class="box-top">
+                                <img src="../images/logos/js-logo.png" class="small-icon" id="third-block-img" >
+                                <h1>Discord CSGO Bot</h1>
+                                <a class="popup-button" href="#popup1">More Information</a>
+                            </div>
+                            <img src="../images/index/csgoapi.png" class="portfolio-image">
+
+                            <!--What will popup-->
+                            <div class="overlay" id="popup1">
+                                <div class="popup">
+                                    <!--The Close button-->
+                                    <a class="popup-close" href="#">x</a>
+                                    <div class="popup-content">
+                                        This discord bot was made with NodeJS and DiscordJS as well as some other smaller libraries. <br>
+                                        It displays information from steam's public database.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                 
+                    </div>
+
+                    <div class="content-2">
+                        
+                        <div class="box">
+                            <div class="box-top">
+                                <img src="../images/logos/js-logo.png" class="small-icon" id="third-block-img" >
+                                <h1>Discord Rust Bot</h1>
+                                <a class="popup-button" href="#popup2">More Information</a>
+                            </div>
+                            <img src="../images/index/rustapi.png" class="portfolio-image">
+
+                            <!--What will popup-->
+                            <div class="overlay" id="popup2">
+                                <div class="popup">
+                                    <!--The Close button-->
+                                    <a class="popup-close" href="#">x</a>
+                                    <div class="popup-content">
+                                        This discord bot was made with NodeJS and DiscordJS as well as some other smaller libraries. <br>
+                                        It displays information from steam's public database.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="content-1">
+                        
+                        <div class="box">
+                            <div class="box-top">
+                                <img src="../images/logos/js-logo.png" class="small-icon" id="third-block-img" >
+                                <h1>Electron Application</h1>
+                                <a class="popup-button" href="#popup3">More Information</a>
+                            </div>
+                            <img src="../images/index/emcapi.png" class="portfolio-image">
+
+                            <!--What will popup-->
+                            <div class="overlay" id="popup3">
+                                <div class="popup">
+                                    <!--The Close button-->
+                                    <a class="popup-close" href="#">x</a>
+                                    <div class="popup-content">
+                                        This application was made with the Electron library and uses the EMC API.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--The footer-->
+                    <div class="footer-container">
+                        <div class="footer-content">
+                            <p>Made with ❤️ by Lucas Persson Öhlin</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!--Scripts that need the document to be loaded for them to work properly-->
+        <script src="../js/renderer.js"></script> 
+    </body>
+</html>

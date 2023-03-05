@@ -1,0 +1,50 @@
+.main-container {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+}
+
+.content-1 {
+    background-color: var(--main-blend-bg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-1 p {
+    font-size: 21px;
+    padding: 15px;
+}
+
+.content-2 {
+    background-color: var(--main-blend2-bg);
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .content-1 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-2 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Charset and title of the website-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>lucas-persson-ohlin</title>
+
+        <!--Shared CSS style sheets-->
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+
+        <!--CSS for this page-->
+        <link rel="stylesheet" href="../css/index/main.css" />
+        
+        <!--Fontawesome (icons)-->
+        <script src="https://kit.fontawesome.com/abc9051b08.js" crossorigin="anonymous"></script>
+
+        <!--Scripts that's supposed to load before the rest of the document-->
+        <script defer src="../js/scripts.js"></script> 
+    </head>
+    <body>
+        
+        <div class="grid-container">
+
+            <!--The navigation bar ontop of the page-->
+            <nav id="nav-id">
+                <div class="nav-container">
+                    <a class="menu-title"href="/src/pages/index.html"><h1>Lucas Persson Öhlin</h1></a>
+                    
+                    <div class="page-menu">
+                        <a id="home-button" href="/src/pages/index.html" class="active">Home</a>
+                        <a href="/src/pages/cv.html">CV</a>
+                        <a href="/src/pages/portfolio.html">Portfolio</a>
+                        <a href="/src/pages/aboutme.html">About me</a>
+                        <a href="/src/pages/contact.html">Contact</a>
+                    </div>
+
+                    <!--The mobile responsive menu-->
+                    <div class="mobile-menu">
+                        <a href="/src/pages/index.html" class="active">Home</a>
+                        <a href="/src/pages/cv.html">CV</a>
+                        <a href="/src/pages/portfolio.html">Portfolio</a>
+                        <a href="/src/pages/aboutme.html">About me</a>
+                        <a href="/src/pages/contact.html">Contact</a>
+                    </div>
+                    <!--The hamburger menu-->
+                    <button class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+            </nav>
+            
+            <!--The main content of the page-->
+            <div class="main-container">
+
+                <div class="content-container">
+                    
+                    <!--The different "pages"-->
+                    <div class="content-container-1">
+                        <div class="content-container-1-content">
+                            <!-- <div class="image"><img src="../images/guy2.png"></div> -->
+                            
+                            <div class="container-1-left">
+                                <div class="text-holder">
+                                    <p id="info-text"><i> ‎ ‎ ‎ -  { backend developer }</i></p>
+                                    <h2>Based in Sweden 🇸🇪</h2>
+                                    <p>Yo👋, i'm a primarly backend developer from, and based in Sweden.<br> 
+                                       I've been coding and designing applications and websites for the<br>
+                                       better of 6 years at this point.</p>
+                                </div>
+                                <div class="icon-holder">
+                                    <a href="https://github.com/lucas-ohlin"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/lucas-persson-%C3%B6hlin-39b698267/"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="container-1-right">
+                                <div class="image-cirle"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <div class="cv-container">
+                        <div class="cv-content">
+
+                            <!--The CV images-->
+                            <div class="cv-content-left">
+                                <a href="/src/pages/cv.html">
+                                    <img src="../images/logos/ukflag.png" width="50px" height="25px">
+                                    <img src="../images/logos/swedenflag.png" id="swe-flag" width="50px" height="25px">
+                                    <img src="../images/index/cv-eng-1.png" class="cv-image">
+                                </a>
+                            
+                                <a href="/src/pages/cv.html" id="swe-cv">
+                                    <img src="../images/logos/swedenflag.png" width="50px" height="25px">
+                                    <img src="../images/index/cv-1.png" class="cv-image">
+                                </a>
+                            </div>
+
+                            <div class="cv-content-right">
+
+                                <a class="read-more-button" href="cv.html">
+                                    <!-- <h1>digital cv ></h1> -->
+                                </a>
+                              
+                                <div class="text-holder">
+                                    <p id="info-text"><i> ‎ ‎ ‎ - cv</i></p>
+                                    <h2>My CV<br></h2>
+                                    <p>My CV in both english for the international market 🤣,<br> 
+                                       and in swedish for the people at home. 🇸🇪</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio-container">
+                        <div class="portfolio-content">
+                            
+                            <div class="portfolio-content-left">
+
+                                <a class="read-more-button" href="cv.html">
+                                    <!-- <h1>more of my work ></h1> -->
+                                </a>
+
+                                <div class="text-holder">
+                                    <p id="info-text"><i> ‎ ‎ ‎ - portfolio</i></p>
+                                    <h2>Portfolio<br></h2>
+                                    <p>A library of some of my projects made in mainly,<br> 
+                                       JS or C# but includes some other languages.</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-content-right">
+                                <div class="block-1">
+                                    <div class="block-1-content">
+
+                                        <div class="block-left">
+                                            <a href="/src/pages/portfolio.html">
+                                                <img src="../images/logos/js-logo.png" class="small-icon">
+                                                <img src="../images/index/rustapi.png" class="portfolio-image">
+                                            </a>
+                                            <a href="/src/pages/portfolio.html">
+                                                <img src="../images/logos/js-logo.png" class="small-icon" id="mobile-disable" >
+                                                <img src="../images/index/csgoapi.png" class="portfolio-image" id="mobile-disable">
+                                            </a>
+                                            <a href="/src/pages/portfolio.html">
+                                                <img src="../images/logos/js-logo.png" class="small-icon" id="third-block-img" >
+                                                <img src="../images/index/emcapi.png" class="portfolio-image" id="third-block-img">
+                                            </a>
+                                        </div>
+                                        <div></div>
+
+                                    </div>
+                                </div>
+
+                                <div class="block-2" id="mobile-disable">
+                                    <div class="block-2-content">
+                                        <div></div>
+                                        <div class="block-right">
+                                            <a href="/src/pages/portfolio.html">
+                                                <img src="../images/logos/csharp.png" class="small-icon">
+                                                <img src="../images/index/game.png" class="portfolio-image">
+                                            </a>
+                                            <a href="/src/pages/portfolio.html">
+                                                <img src="../images/logos/python.svg" class="small-icon">
+                                                <img src="../images/index/pyreader.png" class="portfolio-image">
+                                            </a>
+                                            <a href="/src/pages/portfolio.html">
+                                                <img src="../images/logos/csharp.png" class="small-icon" id="third-block-img">
+                                                <img src="../images/index/csharpbank.png" class="portfolio-image" id="third-block-img">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="aboutme-container">
+                        <div class="aboutme-content">
+
+                            <div class="container-1-left">
+                                <div class="image-cirle"></div>
+                            </div>
+
+                            <div class="container-1-right">
+                                <div class="text-holder">
+                                    <p id="info-text"><i> ‎ ‎ ‎ - about me</i></p>
+                                    <h2>About me<br></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
+                                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="footer-container">
+                        <div class="footer-content">
+                            <p>Made with ❤️ by Lucas Persson Öhlin</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!--Scripts that need the document to be loaded for them to work properly-->
+        <script src="../js/renderer.js"></script> 
+    </body>
+</html>
